@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+int * test();
+  static int x[4];
+  for(int i=0;i<4;i++){
+    x[i] = i%2;
+  }
+  return 0;
+
+}
+
+int main() {
+  int * arr = test();
+  printf("%d", *(arr+3));
+}
+
