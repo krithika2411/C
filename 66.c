@@ -1,16 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <errno.h>
-extern int errno;
+#include <math.h>
 int main(){
-    FILE *fptr;
-    errno = 0;
-    fptr = fopen("c:\\test.txt", "r");
-    if (fptr == NULL)
-    {
-        fprintf(stderr, "Error opening file. Error code: %d\n", errno);
-       exit (EXIT_FAILURE);
-    }
-    fclose(fptr);
-    return 0;
-}
+    
+int b, c;
+b = c =1;
+int a= b+c ;
+int power =pow(b,c);
+printf("%d",power);
+return 0;
+
+} 

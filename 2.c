@@ -1,10 +1,11 @@
 //Data types
 #include <stdio.h>
-int main(int argc, char const *argv[])
+int main()
 {
-    printf("int: %ld\n", sizeof(int));
-    printf("float: %ld\n", sizeof(float));
-    printf("double: %ld\n", sizeof(double));
-    printf("char: %ld\n", sizeof(char));
+    float radius;
+    printf("enter radius:");
+    scanf("%f", &radius);
+    printf("area of circle is %f", 3.14*radius*radius);
+  
     return 0;
 }

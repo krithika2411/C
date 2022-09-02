@@ -1,19 +1,17 @@
 #include <stdio.h>
-typedef struct{
-  int h;
-  int w;
-  int l;
-
-}box;
-
+#include <conio.h>
 int main(){
-    box boxes[3]= {{2,3,4,}, {4,5,6}};
-
-    int k, volume;
-    for(k= 0; k<3; k++){
-       volume = boxes[k].h*boxes[k].w*boxes[k].l;
-       printf("box %d volume %d\n", k, volume);
-    }
+    int a, b, small;
+    printf("enter any two number : ");
+    scanf("%d %d", &a, &b);
+    if (a<b)
+    small= a;
+    else if (a>b)
+    small = b;
+   printf("smallest of the two number = %d", small);
+   getch();
+   
+    
 
     return 0;
 }
